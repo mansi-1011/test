@@ -96,8 +96,8 @@ export default function Shop() {
       return;
     }
     getSubcategoy();
-    getProduct();
-  }, [getSubcategoy, getProduct]);
+    // getProduct();
+  }, [getSubcategoy]);
 
   return (
     <>
@@ -116,7 +116,7 @@ export default function Shop() {
           </div>
         </div>
       </div>
-      <ShopInner addToCart={addToCart} getSubcategoy={getSubcategoy} onSubcategoryGet={onSubcategoryGet} getProduct={getProduct} title={title} active={active}/* FilterByName={FilterByName} */ />
+      <ShopInner addToCart={addToCart} getSubcategoy={getSubcategoy} onSubcategoryGet={onSubcategoryGet} title={title} active={active}/* FilterByName={FilterByName} */ />
     </>
   )
 }
